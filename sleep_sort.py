@@ -2,7 +2,13 @@ import random
 import threading
 import time
 
-arr = [random.randint(0, 30) for x in range(20)]
+MAX_RANGE = 20
+
+MIN_NUMBER = 0
+MAX_NUMBER = 30
+
+
+arr = [random.randint(MIN_NUMBER, MAX_NUMBER) for x in range(MAX_RANGE)]
 print(arr)
 
 sorted_arr = []
@@ -15,7 +21,7 @@ def sleep_sort_step(x):
 
 
 def print_arr(arr):
-    time.sleep(31)
+    time.sleep(max(arr)+1)
     print(arr)
 
 
