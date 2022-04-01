@@ -2,6 +2,9 @@ import random
 import threading
 import time
 
+# TODO: Scale Sleep duration so sorting is faster
+# TODO: Test Threading with asyncio.create_task() vs threading.Thread
+
 MAX_RANGE = 20
 
 MIN_NUMBER = -30
